@@ -2,6 +2,13 @@
 Credit: http://www.tooplate.com
 */
 
+/*have to do picture the contact and the colors*/
+
+
+
+
+
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -13,6 +20,16 @@ body {
 	background-image: url(../images/tooplate-body.jpg);
 	background-repeat: repeat-x;
 	background-position: top;
+}
+@media(min-width: 660px){
+	#body {
+		background-image: url(../images/tooplate-body.jpg);
+	    background-repeat: repeat-x;
+	    background-position: top;}
+img {
+	border: none;
+}
+
 }
 
 a, a:link, a:visited {
@@ -47,6 +64,7 @@ p {
 img {
 	border: none;
 }
+
 
 blockquote {
 	font-style: italic;
@@ -126,20 +144,31 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	color: #c20202;
 }
 
+
 #tooplate-body-wrapper {
 	width: 100%;
 	background: url(../images/tooplate-header.jpg) top center no-repeat;
 }
 
+@media(min-width:660px){
+#tooplate-body-wrapper {background: url(../images/tooplate-header.jpg) top center no-repeat;}
+}
+
+
 #tooplate-wrapper {
-	width: 960px;
+	max-width: 960px;
 	padding: 0 10px;
 	margin: 0 auto;
+	background:darkgreen;
+}
+@media(min-width: 660px){
+#tooplate-wrapper {
 	background: url(../images/tooplate-header.jpg) top center no-repeat;
+ }
 }
 
 #tooplate-top-bar {
-	width: 960px;
+	max-width: 960px;
 	height: 40px;
 	padding: 5px 0;
 }
@@ -161,15 +190,19 @@ a.social-btn {
 a.twitter { background: url(../images/tooplate-twitter.png) center right no-repeat }
 a.facebook { background: url(../images/facebook.png) center right no-repeat }
 a.social-btn:hover { color: #bd9213 }
+@media(min-width: 852px){
 
-#tooplate-header {
-	width: 960px;
+#tooplate-header {height: 80px;}}
+
+/*#tooplate-header {
+	max-width: 960px;
 	height: 80px;
 	padding: 10px 0;
-}
-
+}*/
+@media(min-width:852px;){
 #site-title {
 	float: left;
+}
 }
 
 #site-title h1 {
@@ -187,13 +220,13 @@ a.social-btn:hover { color: #bd9213 }
 }
 
 /* menu */
-
+@media(min-width: 852px;){
 #tooplate-menu {
 	float: right;
 	width: 625px;
 	height: 65px;
 	margin: 0 auto;
-}
+}}
 
 #tooplate-menu ul {
 	margin: 0;
@@ -208,9 +241,9 @@ a.social-btn:hover { color: #bd9213 }
 }
 
 #tooplate-menu ul li a {
-	float: left;
+
 	display: block;
-	width: 125px;
+	
 	height: 35px;
 	padding: 30px 0 0 0;
 	font-size: 14px;
@@ -221,6 +254,14 @@ a.social-btn:hover { color: #bd9213 }
 	outline: none;
 	border: none;
 }
+
+@media(min-width:660px ){
+	#tooplate-menu ul li a {float: left;
+	width: 125px;}
+
+}
+
+
 
 #tooplate-menu ul li a:hover, #tooplate-menu ul .current {
 	color: #fff;
@@ -242,7 +283,7 @@ a.social-btn:hover { color: #bd9213 }
 
 #tooplate-middle-subpage {
 	clear: both;
-	width: 960px;
+	max-width: 960px;
 	height: 120px;
 	padding: 15px 0;
 	margin-bottom: 20px;
@@ -260,11 +301,11 @@ a.social-btn:hover { color: #bd9213 }
 
 #tooplate-main {
 	clear: both;
-	width: 960px;
+	max-width: 960px;
 	padding: 20px 0;
 }
 
-.col-w960 { width: 960px; margin-bottom: 40px }
+.col-w960 { max-width: 960px; margin-bottom: 40px }
 .col-w600 { width: 600px }
 .col-w450 { width: 450px }
 .col-w300 { width: 300px }
@@ -432,14 +473,25 @@ a.social-btn:hover { color: #bd9213 }
 
 #tooplate-footer-wrapper {
 	width: 100%;
-	background: #1f1b1a;
+	/*background: #1f1b1a;*/
+    background: white;
+}
+@media(max-width:660px){
+#tooplate-footer-wrapper {
+	
+	background:darkgreen;
+}
 }
 
+
 #tooplate-footer {
-	width: 960px;
+	max-width: 960px;
 	padding: 30px 10px;
 	color: #8b773a;
 	margin: 0 auto;
+}
+
+
 }
 
 #tooplate-copyright-wrapper {
@@ -448,7 +500,7 @@ a.social-btn:hover { color: #bd9213 }
 }
 
 #tooplate-copyright {
-	width: 960px;
+	max-width: 960px;
 	padding: 10px;
 	color: #39302b;
 	margin: 0 auto;
